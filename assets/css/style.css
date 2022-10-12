@@ -1,0 +1,665 @@
+/*==========================================
+
+Aufgabenstellung
+
+Hintergrund: Wie werde ich ein besserer Designer?
+
+Diese Frage habe ich mir gestellt. Wie kann ich meine Design-Fähigkeiten verbessern und mehr Kund:innen anziehen? Ich wollte ein paar Konzepte entwerfen, die ich lange Zeit nur auf Papier hatte. Ich habe gesehen, dass viele Designer:innen (vor allem in Dribbble) eine tägliche Benutzeroberfläche erstellt haben. Die Idee hat mir gefallen, aber das Problem war, dass das Ergebnis nur etwas Schönes darstellte, aber kein Problem löste. So kam ich auf die Idee dieser täglichen Herausforderung. 
+
+Setze das Design für die Website responsiv um.
+
+
+==========================================*/
+
+/*=========================================
+
+                    Assets:
+Font: Roboto
+Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000
+
+==========================================*/
+
+@font-face {
+    font-family: roboto;
+    src: url("../fonts/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: roboto_medium;
+    src: url("../fonts/Roboto-Medium.ttf");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* body {
+    width: 1920px;
+    height: 1080px;
+
+} */
+
+h1 {
+    font-family: roboto;
+
+}
+
+h2 {
+    font-family: roboto;
+
+}
+
+p {
+    font-family: roboto-medium;
+
+
+}
+
+/*========================
+        - Header -
+=========================*/
+
+
+header {
+
+    width: 100%;
+    height: 31vh;
+    background-image: url("../img/ilustracion1.png");
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 40%;
+
+}
+
+aside {
+
+    width: 200px;
+    position: absolute;
+    bottom: 58rem;
+    left: 36rem;
+}
+
+.human {
+
+    width: 250px;
+    height: 250px;
+    animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+
+    0%,
+    100% {
+        margin-top: 0px;
+    }
+
+    50% {
+        margin-bottom: -30px;
+    }
+}
+
+#human {
+
+    width: 200px;
+    height: 200px;
+    /* position: relative; */
+    animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+
+    0%,
+    100% {
+        margin-top: 0px;
+    }
+
+    50% {
+        margin-bottom: -30px;
+    }
+}
+
+
+#logo {
+
+    width: 1.2rem;
+    position: fixed;
+    margin: 1rem 0 0 1rem;
+}
+
+header h1 {
+    font-size: 1rem;
+
+
+}
+
+header h2 {
+
+    font-size: 3.5rem;
+    padding-top: 6rem;
+}
+
+header p {
+    font-size: 1.1rem;
+
+
+}
+
+header div {
+
+    padding: 1rem 0 0 3rem;
+}
+
+header div p {
+
+    font-size: 0.5rem;
+    padding-left: 0.1rem;
+}
+
+header article {
+
+    display: flex;
+    width: 67vw;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 0.5rem;
+    padding-left: 5rem;
+
+}
+
+
+header article p:nth-of-type(2) {
+
+    color: red;
+}
+
+.scroll {
+
+    padding-top: 6rem;
+    font-size: 0.6rem
+}
+
+
+
+/*==========================
+        - Main -
+===========================*/
+
+
+section img {
+
+    width: 100%;
+
+}
+
+#lamp {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 25vh;
+    padding: 0 8rem;
+
+}
+
+
+.h2 {
+
+    width: 15rem;
+    font-size: 2.5rem;
+
+}
+
+.p {
+
+    width: 24rem;
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+
+}
+
+#after {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+}
+
+#after h2 {
+
+    justify-content: right;
+    width: 60%;
+    padding-left: 12rem;
+    font-size: 2.5rem;
+}
+
+
+#icon {
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#start {
+
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    width: 30%;
+    row-gap: 5rem;
+    word-spacing: 0.1rem;
+    /* padding-right: 15rem; */
+
+}
+
+#start span {
+
+    font-weight: 900;
+}
+
+
+#start p:nth-of-type(1)::before {
+
+    content: " ";
+    background-image: url("../img/title02.svg");
+    background-size: 100%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 0.5rem;
+
+}
+
+#start p:nth-of-type(2)::before {
+
+    content: " ";
+    background-image: url("../img/title01.svg");
+    background-size: 100%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+#share span {
+
+    font-weight: 900;
+}
+
+#share {
+
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    width: 29%;
+    row-gap: 4rem;
+    word-spacing: 0.1rem;
+
+}
+
+
+#share p:nth-of-type(1)::before {
+
+    content: " ";
+    background-image: url("../img/title04.svg");
+    background-size: 100%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 0.5rem;
+
+}
+
+#share p:nth-of-type(2)::before {
+
+    content: " ";
+    background-image: url("../img/title03.svg");
+    background-size: 100%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 0.5rem;
+
+}
+
+
+#ready {
+
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    padding-left: 5rem;
+
+
+}
+
+
+#ready h2 {
+
+    width: 60%;
+    margin: 2rem;
+    font-size: 2.5rem;
+}
+
+#ready p {
+
+    width: 83%;
+    padding-right: 8rem;
+    text-align: center;
+    padding-left: 7rem;
+
+}
+
+
+#steppy {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+
+
+#steppy img {
+
+    width: 45%;
+
+}
+
+#steppy article {
+
+    width: 50%;
+
+}
+
+#steppy article p {
+
+    margin: 1rem 0 0 2rem;
+    line-height: 1.5rem;
+}
+
+#steppy article p:nth-of-type(1) {
+
+    color: rgba(199, 195, 195, 0.679);
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 9rem;
+
+}
+
+#steppy article p span {
+
+    font-weight: 900;
+}
+
+
+#steppy p:nth-of-type(2)::before {
+
+    content: " ";
+    background-image: url("../img/step01.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+
+}
+
+#solution {
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+}
+
+#solution img {
+
+    width: 45%;
+}
+
+#solution p {
+
+    width: 90%;
+    padding-left: 5rem;
+
+}
+
+
+#solution article p:nth-of-type(1) {
+
+    color: rgba(199, 195, 195, 0.679);
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 4rem;
+
+}
+
+
+#solution p:nth-of-type(2)::before {
+
+    content: " ";
+    background-image: url("../img/step02.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-bottom: 2rem;
+
+}
+
+
+#solution article p span {
+
+    font-weight: 900;
+}
+
+
+#design {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+
+}
+
+#design img {
+
+    width: 45%;
+
+}
+
+#design p {
+
+    width: 80%;
+}
+
+#design article {
+
+    padding-left: 4rem;
+}
+
+
+#design article p:nth-of-type(1) {
+
+    color: rgba(199, 195, 195, 0.679);
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 4rem;
+
+}
+
+
+
+#design p:nth-of-type(2)::before {
+
+    content: " ";
+    background-image: url("../img/step03.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-bottom: 2rem;
+
+}
+
+#design article p span {
+
+    font-weight: 900;
+}
+
+
+#instagram {
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+}
+
+#instagram img {
+
+    width: 45%;
+    padding-right: 3rem;
+
+}
+
+#instagram p {
+
+    width: 80%;
+}
+
+
+#instagram article p:nth-of-type(1) {
+
+    color: rgba(199, 195, 195, 0.679);
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 4rem;
+
+}
+
+#instagram p:nth-of-type(2)::before {
+
+    content: " ";
+    background-image: url("../img/step04.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-bottom: 2rem;
+
+}
+
+#instagram article p span {
+
+    font-weight: 900;
+}
+
+#instagram article {
+
+    padding-left: 5rem;
+
+}
+
+
+
+footer {
+
+    display: block;
+    width: 100%;
+    height: 30vh;
+    line-height: 3rem;
+}
+
+footer h2 {
+
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+}
+
+footer p {
+
+
+    width: 100%;
+    text-align: center;
+
+
+}
+
+footer button {
+
+
+    display: block;
+    color: #ffffff;
+    background-color: rgb(240, 12, 99);
+    width: 25%;
+    height: 4vh;
+    margin: 0 auto;
+}
+
+button:hover {
+
+
+    background-image: linear-gradient(90deg, red ,blue);
+}
+
+footer input {
+
+    display: block;
+    width: 60%;
+    height: 5vh;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+
+#heart {
+
+    margin: 0 0 1rem 3rem;
+}
+
+
+
+#heart p::after {
+
+    content: " ❤️";
+
+}
+
+
+/* @media only screen and (min-width: 601px)
+
+@media only screen and (min-width: 901px)
+
+@media only screen and (min-width: 1201px) */
